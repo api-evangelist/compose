@@ -1,0 +1,73 @@
+{
+    "name": "Compose",
+    "description": "<p>Build Your Best with MongoDB and Elasticsearch. Compose is a fully-managed platform used by developers to deploy, host and scale databases. Compose deployments scale seamlessly as your data grows. Spend more time on your data model, less time capacity planning. This is how everyone should run databases. Backups, replication, complete monitoring. Three essentials of a production database deployment. Spend your time building apps, let us worry about production operations.<\/p>",
+    "image": "",
+    "tags": [
+        "api provider",
+        "databases",
+        "have api"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/compose\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Compose",
+            "description": null,
+            "image": "",
+            "humanURL": "https:\/\/www.compose.io",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/compose-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/compose-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog",
+            "url": "https:\/\/blog.compose.io\/"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "https:\/\/www.compose.com\/articles\/rss\/"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "https:\/\/blog.compose.io\/feed\/"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/help.compose.com\/"
+        },
+        {
+            "type": "Email",
+            "url": "support@compose.io "
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/compose"
+        },
+        {
+            "type": "Pricing",
+            "url": "https:\/\/www.compose.com\/pricing\/"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/composeio"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/www.compose.io"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/compose/bach
+note: >-
+  Compose (compose.io) was acquired by IBM in 2015 and the service is
+  deprecated. The CLI documentation site is offline; this records the surviving
+  first-party command-line tooling from the archived github.com/compose
+  organization. Repositories are archived (read-only). The CLIs drive the
+  Compose REST API (base URL https://api.compose.io/2016-07/, formerly
+  documented at apidocs.compose.com).
+clis:
+- name: bach
+  repo: https://github.com/compose/bach
+  language: go
+  official: true
+  archived: true
+  description: A command line for the Compose API.
+  install:
+  - method: go
+    command: go get github.com/compose/bach
+- name: cocli
+  repo: https://github.com/compose/cocli
+  language: go
+  official: true
+  archived: true
+  description: Compose command-line tooling.
+  install:
+  - method: go
+    command: go get github.com/compose/cocli
+resources:
+- account
+- deployments
+- clusters
+- databases
+- datacenters
+- recipes
+- backups
+- scalings
+- alerts
+- audit_events
+- logfiles
+- teams
+- team_roles
+- users
+- tags
+- whitelists

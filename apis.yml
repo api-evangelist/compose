@@ -1,7 +1,32 @@
 aid: compose
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/compose.png
 name: Compose
-description: Compose is a company surfaced as a portfolio company of dcvc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Compose (Compose, Inc., compose.io) was a database-as-a-service (DBaaS)
+  provider that offered production-ready, auto-scaling, hosted deployments of
+  open-source databases — MongoDB, PostgreSQL, Redis, Elasticsearch, RabbitMQ,
+  RethinkDB, ScyllaDB, etcd, MySQL, and Disque — each provisioned with high
+  availability, automated backups, and a REST API for programmatic management.
+  Founded in 2010 as MongoHQ and rebranded to Compose in 2014, the company was
+  backed by DCVC (Data Collective) and was acquired by IBM in 2015, after which
+  the offering was folded into IBM Cloud as "IBM Compose" / IBM Cloud Databases.
+  The standalone Compose service and its developer surface (compose.com,
+  compose.io, apidocs.compose.com) have since been deprecated and taken offline.
+  This profile documents the surviving, verifiable first-party artifacts — the
+  archived GitHub organization at github.com/compose, the official Go SDK
+  (gocomposeapi) wrapping the Compose REST API, and the official command-line
+  tools (bach, cocli).
 url: https://raw.githubusercontent.com/api-evangelist/compose/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +34,50 @@ x-backed-by:
 - dcvc
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: IBM
+x-acquired-year: 2015
+x-service-status: defunct
+x-former-names:
+- MongoHQ
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Database
+- Database as a Service
+- DBaaS
+- MongoDB
+- PostgreSQL
+- Redis
+- Elasticsearch
+- Cloud
+- Managed Database
 apis: []
+common:
+- type: GitHubOrganization
+  url: https://github.com/compose
+  name: Compose GitHub organization (archived; "Compose were acquired by IBM")
+- type: Packages
+  url: packages/compose-packages.yml
+  name: First-party Compose client libraries and CLIs
+- type: SDKs
+  url: packages/compose-packages.yml
+  name: Official Go SDK for the Compose REST API (gocomposeapi)
+- type: CLI
+  url: cli/compose-cli.yml
+  name: Official command line for the Compose API (bach)
+- type: SourceCode
+  url: https://github.com/compose/gocomposeapi
+  name: gocomposeapi - Go wrapper around the Compose REST API (Apache-2.0)
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

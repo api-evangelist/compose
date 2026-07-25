@@ -1,0 +1,46 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/compose
+note: >-
+  Compose (compose.io) was acquired by IBM in 2015 and the service is
+  deprecated; the package registry (apidocs.compose.com) and download pages are
+  offline. These are the surviving first-party client libraries and CLIs
+  published in the archived github.com/compose organization. All repositories
+  are archived (read-only). The Compose REST API they target was documented at
+  apidocs.compose.com with base URL https://api.compose.io/2016-07/.
+packages:
+- language: go
+  registry: go-modules
+  name: github.com/compose/gocomposeapi
+  url: https://github.com/compose/gocomposeapi
+  install: go get github.com/compose/gocomposeapi
+  official: true
+  archived: true
+  license: Apache-2.0
+  kind: sdk
+  description: >-
+    GoComposeAPI - a Go wrapper around the Compose REST API
+    (base URL https://api.compose.io/2016-07/). Covers account, deployments,
+    clusters, databases, datacenters, recipes, backups, scalings, alerts,
+    audit events, log files, teams, team roles, users, tags, and whitelists.
+- language: go
+  registry: go-modules
+  name: github.com/compose/bach
+  url: https://github.com/compose/bach
+  install: go get github.com/compose/bach
+  official: true
+  archived: true
+  kind: cli
+  description: >-
+    bach - a command line for the Compose API. The CLI binary is also
+    catalogued in cli/compose-cli.yml.
+- language: go
+  registry: go-modules
+  name: github.com/compose/cocli
+  url: https://github.com/compose/cocli
+  install: go get github.com/compose/cocli
+  official: true
+  archived: true
+  kind: cli
+  description: >-
+    cocli - Compose command-line tooling (Go). Archived.

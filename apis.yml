@@ -56,6 +56,13 @@ tags:
 - Managed Database
 apis: []
 common:
+- type: IssueTracker
+  url: https://github.com/compose/gocomposeapi/issues
+- type: Releases
+  url: https://github.com/compose/gocomposeapi/releases
+- type: License
+  name: Apache-2.0
+  url: https://github.com/compose/gocomposeapi/blob/master/LICENSE
 - type: GitHubOrganization
   url: https://github.com/compose
   name: Compose GitHub organization (archived; "Compose were acquired by IBM")

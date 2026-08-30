@@ -58,7 +58,8 @@ modified: '2026-07-18'
 tags:
 - Company
 - Database
-- Database-as-a-Service
+- Database as a Service
+- DBaaS
 - MongoDB
 - PostgreSQL
 - Redis
@@ -78,6 +79,11 @@ tags_raw:
 - Managed Database
 apis: []
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/ibm/
+  name: IBM
+  x-relationship: acquired
+  x-evidence: "Founded in 2010 as MongoHQ and rebranded to Compose in 2014, the company was backed by DCVC (Data Collective) and was acquired by IBM in 2015, after which the offering was folded into IBM Cloud as 'IBM Compose' / IBM Cloud Databases."
 - type: IssueTracker
   url: https://github.com/compose/gocomposeapi/issues
 - type: Releases
